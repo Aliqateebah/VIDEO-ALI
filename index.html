@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحويل النص إلى فيديو</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>تحويل النص إلى فيديو</h1>
+        <textarea id="text-input" placeholder="اكتب النص هنا"></textarea>
+
+        <label for="background-select">اختر الخلفية:</label>
+        <select id="background-select">
+            <option value="none">بدون خلفية</option>
+            <option value="background1">خلفية 1</option>
+            <option value="background2">خلفية 2</option>
+        </select>
+
+        <label for="music-select">اختر الموسيقى:</label>
+        <select id="music-select">
+            <option value="none">بدون موسيقى</option>
+            <option value="music1">موسيقى 1</option>
+            <option value="music2">موسيقى 2</option>
+        </select>
+
+        <button id="generate-button">إنشاء الفيديو</button>
+        <canvas id="canvas" width="640" height="480"></canvas>
+        <video id="video-output" controls></video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
